@@ -1,0 +1,86 @@
+resources
+https://www.groundsguys.ca/blog/2015/april/understanding-types-of-trees/#:~:text=But%20generally%2C%20trees%20in%20the,the%20tree%20throughout%20the%20year.
+podcast: completley arbortrary
+https://treecanada.ca/resources/trees-of-canada/
+
+choose your own adventure style game where a player can go down a series of paths
+player starts as a seedling
+
+starting path determined by
+grow speed
+hardiness
+climate
+
+chooses deciduous or coniferous/evergreem
+    flowering or no
+edible parts
+
+deciduous have star/heart/oval shaped leaves that turn yellow/red/orange in the fall
+    some have flowers some do not
+D trees reproduce using seeds and flowers
+    require pollination to reproduce
+
+
+confiers have cones/needles/scales
+    also known as evergreens
+        but not all conifers are evergrees, some drop their needles (bald cyprus/larch)
+C trees use compact cones with seeds inside to reproduce
+    seeds carried around by wildlife
+
+
+Take user through a series of questions to determine which kind of tree they are from these options:
+
+D
+sugar maple
+flowering dogwood
+jacaranda
+black walnut
+mountain ash
+weeping willow
+
+C 
+monkey puzzle
+bristlecone pine
+douglas fir
+alaskan pine
+silver spruce
+weeping alaska cedar
+
+D/C 
+Alpine larch
+bald cypress
+
+
+ask questions and move through seasons
+!! the game will require lots of SWITCHES and LOOPS
+!! start making HTML and CSS 
+
+First spring
+Forest fire - how does the tree handle it
+First fall
+how much has the tree grown
+First winter
+How much foliage has the tree dropped
+
+years 2 - 7
+how arid versus humid
+temperature ranges
+growth rate
+    height
+    thickness
+have any reached enough maturity to reproduce
+
+years 8 - 15
+more spring/summer/fall/winter scenarios
+human interference?
+
+splinter off for post-maturity growth
+
+EVENTS
+fire
+logging
+harvesting
+monsoon
+flood
+winds
+
