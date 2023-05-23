@@ -1,1 +1,37 @@
-
+html {
+    font-family: Quicksand, sans-serif;
+    flex-direction: column;
+}
+a {
+    text-decoration:  none;
+}
+#intro {
+    display:flex;
+    flex-direction:column;
+}
+#treeintro {
+    display: none;
+    flex-direction:column;
+}
+#tree-modal {
+    background-color:blanchedalmond;
+    display: none;
+    z-index: 1;
+    overflow:auto;
+    flex-direction:column;
+}
+.event-modal {
+    background-color: blanchedalmond;
+    display: none;
+    z-index: 1;
+    overflow:auto;
+    flex-direction:column;
+}
+.status-blurb {
+    display:flex;
+    flex-direction:column;
+}
+.choice {
+    display:none;
+    flex-direction: column;
+}

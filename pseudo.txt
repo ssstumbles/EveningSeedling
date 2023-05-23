@@ -13,21 +13,5 @@ h2 dynamic
     id status second will show season and year
 
 
-typeOfTree 
-Decid
-baseGrowth = 
-
-[1] conif
-[2] unknown
 
 
-
-//typeOfTree//
-[0] deciduous		 trees are a little more sensitive but achieve a grand canopy and grow tall quicker
-resil +10 growth +5
-
-[1] coniferous	 trees are tough guys, but slower to reach soaring heights
-resil +30 growth +3
-
-[2] "shapeling" 
-Resil +20 growth + 4
