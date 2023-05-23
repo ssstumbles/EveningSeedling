@@ -20,6 +20,10 @@ a {
     overflow:auto;
     flex-direction:column;
 }
+#choice-field {
+    display:none;
+    flex-direction: column;
+}
 .event-modal {
     background-color: blanchedalmond;
     display: none;
@@ -31,7 +35,4 @@ a {
     display:flex;
     flex-direction:column;
 }
-.choice {
-    display:none;
-    flex-direction: column;
-}
+
