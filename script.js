@@ -85,22 +85,22 @@ treeButtons.forEach((button) => {
             treeDecision =`mystery`
         }
        selectedDecision.push(treeDecision)
-        const url = new URL('p2.html', window.location.href);
-        url.searchParams.set('decision', selectedDecision.join(','));
+        const url = new URL('p2.html', window.location.href)
+        url.searchParams.set('decision', selectedDecision.join(`,`))
         window.location.href = url.href;
         console.log(selectedDecision)
     })
 })
 document.addEventListener('DOMContentLoaded', () => {
-    const decisionDisplay = document.getElementById('decision');
-    const params = new URLSearchParams(window.location.search);
-    const decisionString = params.get('decision');
+    const decisionDisplay = document.getElementById('decision')
+    const params = new URLSearchParams(window.location.search)
+    const decisionString = params.get('decision')
     console.log(decisionString)
     console.log(params)
-    const decision = decisionString ? decisionString.split(',') : [];
+    const decision = decisionString ? decisionString.split(`,`) : []
     console.log(decision)
     decisionDisplay.textContent = `You selected: ${decision}`
-  });
+  })
  
   //fire 
   let hunkerDown = document.querySelector(`#hunker`)
@@ -127,19 +127,19 @@ document.addEventListener('DOMContentLoaded', () => {
           }
          fireDecision.push(fireResult)
   
-          const url = new URL('p3.html', window.location.href);
-          url.searchParams.set('fire', fireDecision.join(','));
-          window.location.href = url.href;
+          const url = new URL('p3.html', window.location.href)
+          url.searchParams.set('fire', fireDecision.join(`,`))
+          window.location.href = url.href
           console.log(fireDecision)
       })
   })
   document.addEventListener('DOMContentLoaded', () => {
-      const fireDisplay = document.getElementById('fire-result');
-      const params = new URLSearchParams(window.location.search);
-      const fireDecisionString = params.get('fire');
+      const fireDisplay = document.getElementById('fire-result')
+      const params = new URLSearchParams(window.location.search)
+      const fireDecisionString = params.get(`fire`)
       console.log(fireDecisionString)
       console.log(params)
-      const fire = fireDecisionString ? fireDecisionString.split(',') : [];
+      const fire = fireDecisionString ? fireDecisionString.split(`,`) : []
       console.log(fire)
      fireDisplay.textContent = `You selected: ${fire}`
     });
