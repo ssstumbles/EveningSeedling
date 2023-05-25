@@ -1,18 +1,17 @@
 console.log(`working`)
-//global
 const letsGrow = document.getElementById(`start`)
 const treeIntro = document.getElementById(`treeintro`)
 const introBlock = document.getElementById(`intro`)
 const openModal = document.querySelector(`.open-modal`)
 const modalText = document.getElementById(`tree-modal`)
 const closeModal = document.getElementById(`close`)
-//events
 const openEventModal = document.querySelector(`.modal`)
 const eventModalText = document.querySelector(`.event-modal`)
 const closeEventModal = document.getElementById(`close-modal`)
 const choiceField = document.getElementById(`choice-field`)
-//modal functions
-//intro
+const endModal = document.getElementById(`end-demo`)
+const statsField = document.querySelector(`.stats`)
+const continueButton = document.getElementById(`continue`)
 const noGame = () => {
     treeIntro.style.display = `none`
     introBlock.style.display = `flex`
@@ -27,7 +26,6 @@ const startModal = () => {
 const startClose = () => {
     modalText.style.display = `none`
 }
-//part 2 - tree choice
 const defaultPage = () => {
     eventModalText.style.display = `none`,
         choiceField.style.display = `none`
@@ -41,17 +39,23 @@ const modal = () => {
 const choices = () => {
     choiceField.style.display = `flex`
 }
+//end card
+const thankYou = () => {
+    endModal.style.display = `flex`
+    statsField.style.display = `none`
+}
 // //event listeners pg 1 index
 if (window.location.pathname === `/index.html`) {
     letsGrow.addEventListener(`click`, startGame)
     openModal.addEventListener(`click`, startModal)
     closeModal.addEventListener(`click`, startClose)
 }
-//eventlisteners pg 2
 if (window.location.pathname === `/p2.html`) {
     openEventModal.addEventListener(`click`, modal)
-    //closeEventModal.addEventListener(`click`, close)
     closeEventModal.addEventListener(`click`, choices)
+}
+if (window.location.pathname === `/p3.html`) {
+    continueButton.addEventListener(`click`, thankYou)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -100,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(decision)
     decisionDisplay.textContent = `You selected: ${decision}`
   })
- 
   //fire 
   let hunkerDown = document.querySelector(`#hunker`)
   let growFast = document.querySelector(`#grow`)
@@ -108,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const fireDisplay = document.getElementById(`fire-result`)
   const fireButtons = document.querySelectorAll(`.firechoicebtn`)
   const fireButtonIDs = []
-  
   const fireDecision = []
   fireButtons.forEach((button) => {
       fireButtonIDs.push(button.id)

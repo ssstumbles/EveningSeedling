@@ -24,7 +24,16 @@ a {
     display:none;
     flex-direction: column;
 }
-
+#continue {
+    display: flex;
+}
+#end-demo {
+    background-color:blanchedalmond;
+    display: none;
+    z-index: 1;
+    overflow:auto;
+    flex-direction:column;
+}
 .event-modal {
     background-color: blanchedalmond;
     display: none;
