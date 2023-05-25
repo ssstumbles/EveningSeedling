@@ -1,4 +1,3 @@
-
 console.log(`working`)
 
 const letsGrow = document.getElementById(`start`)
@@ -11,7 +10,6 @@ const openEventModal = document.querySelector(`.modal`)
 const eventModalText = document.querySelector(`.event-modal`)
 const closeEventModal = document.getElementById(`close-modal`)
 const choiceField = document.getElementById(`choice-field`)
-
 //functions
 const noGame = () => {
     treeIntro.style.display = `none`
@@ -61,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         location.assign('index.html')
     }
 })
-
+//tree decision
 let decidGrowRate = document.querySelector(`#decid`)
 let conifGrowRate = document.querySelector(`#conif`)
 let unknownGrowRate = document.querySelector(`#unknown`)
@@ -85,7 +83,6 @@ treeButtons.forEach((button) => {
             treeDecision =`mystery`
         }
        selectedDecision.push(treeDecision)
-
         const url = new URL('p2.html', window.location.href);
         url.searchParams.set('decision', selectedDecision.join(','));
         window.location.href = url.href;
@@ -102,12 +99,52 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(decision)
     decisionDisplay.textContent = `You selected: ${decision}`
   });
+ 
+  //fire 
+  let hunkerDown = document.querySelector(`#hunker`)
+  let growFast = document.querySelector(`#grow`)
+  let chillOut = document.querySelector(`#chill`)
+  const fireDisplay = document.getElementById(`fire-result`)
+  const fireButtons = document.querySelectorAll(`.firechoicebtn`)
+  const fireButtonIDs = []
   
+  const fireDecision = []
+  fireButtons.forEach((button) => {
+      fireButtonIDs.push(button.id)
   
+      button.addEventListener(`click`, () => {
+          const fireChoice = button.id
+          let fireResult
+  
+          if (fireChoice === `hunker`) {
+              fireResult = `hunker down`
+          } else if (fireChoice === `grow`) {
+              fireResult = `grow fast`
+          } else if (fireChoice === `chill`) {
+              fireResult =`chill out`
+          }
+         fireDecision.push(fireResult)
+  
+          const url = new URL('p3.html', window.location.href);
+          url.searchParams.set('fire', fireDecision.join(','));
+          window.location.href = url.href;
+          console.log(fireDecision)
+      })
+  })
+  document.addEventListener('DOMContentLoaded', () => {
+      const fireDisplay = document.getElementById('fire-result');
+      const params = new URLSearchParams(window.location.search);
+      const fireDecisionString = params.get('fire');
+      console.log(fireDecisionString)
+      console.log(params)
+      const fire = fireDecisionString ? fireDecisionString.split(',') : [];
+      console.log(fire)
+     fireDisplay.textContent = `You selected: ${fire}`
+    });
+    
 
 
 
-//stats
 const currentYear = document.getElementById(`year`)
 const currentSeason = document.getElementById(`season`)
 const currentHeight = document.getElementById(`height`)
@@ -122,4 +159,3 @@ currentYear.textContent = `It is year ${yearIs}`
 currentSeason.textContent = `The time of year is ${seasonIs}`
 currentHeight.textContent = `You are ${heightIs}cm tall`
 currentStr.textContent = `Your sturdiness is ${strIs}`
-
