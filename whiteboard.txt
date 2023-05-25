@@ -84,3 +84,6 @@ monsoon
 flood
 winds
 
+TROUBLESHOOTING
+console log all DOMContentLoaded
+and url params

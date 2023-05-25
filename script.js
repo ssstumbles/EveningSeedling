@@ -118,11 +118,11 @@ document.addEventListener('DOMContentLoaded', () => {
           let fireResult
   
           if (fireChoice === `hunker`) {
-              fireResult = `hunker down`
+              fireResult = `you made it through, a little stunted for your age the other trees tell you, but you are strong`
           } else if (fireChoice === `grow`) {
-              fireResult = `grow fast`
+              fireResult = `too much too soon. your sapling trunk was not made to withstand this. your essence is scattered among the seeds battling the chart`
           } else if (fireChoice === `chill`) {
-              fireResult =`chill out`
+              fireResult =`those fires sure did challenge you, yet here you stand - unapolagetically average`
           }
          fireDecision.push(fireResult)
   
@@ -140,14 +140,15 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(params)
       const fire = fireDecisionString ? fireDecisionString.split(`,`) : []
       console.log(fire)
-     fireDisplay.textContent = `You selected: ${fire}`
-    });
-    
+     fireDisplay.textContent = `${fire}`
+    })
+   
+//fucking move these
 const currentYear = document.getElementById(`year`)
 const currentSeason = document.getElementById(`season`)
 const currentHeight = document.getElementById(`height`)
 const currentStr = document.getElementById(`sturdiness`)
-//these
+
 let yearIs = 0
 let seasonIs = `Spring`
 let heightIs = 1
@@ -157,3 +158,7 @@ currentYear.textContent = `It is year ${yearIs}`
 currentSeason.textContent = `The time of year is ${seasonIs}`
 currentHeight.textContent = `You are ${heightIs}cm tall`
 currentStr.textContent = `Your sturdiness is ${strIs}`
+//up to here
+
+
+  
