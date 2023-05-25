@@ -1,5 +1,3 @@
-
-
 display area with flavour text
 background colours that are springy
 buttons - anywhere between 2 and 5(?)
@@ -12,6 +10,33 @@ h2 dynamic
     id blurb first will be flavour text about game
     id status second will show season and year
 
+May 25/2023 status variables
+xxxIs will always be the display variable
 
+! yearIncrement is dependant on a different variable each iteration and doesnt change regularly
+    rather than a loop with a regular increment, it must be dependent on something i declare
+    for alpha, just set it to be 1 year
+        this must be done per tree SO
+decid progress = 1
+conif progress = 1
+unknown progress = 1
+this engages when the tree choice(index) event listener is resolved, therefore this info displays on the next page(p2)
 
+! seasonIs is the display variable
+seasonChange is a loop that will cycle through a string array of the 4 seasons
+p2 is year 1 spring, p3 will be year 1 autumn
 
+! heightGrowth has different stats per tree
+decid = +20 cm
+conif = +1 cm
+unknown = +100 cm
+
+! strUp also has different stats per tree
+IF THIS HITS 0 YOU LOSE
+decid = +1
+conif = +3
+unknown = +2
+
+! these variables must be pulled into the loop
+add the variable, instead of the integer represented by the variable
+this ensures when building further, modifiers can be applied to those variables

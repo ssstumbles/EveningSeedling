@@ -1,16 +1,18 @@
 console.log(`working`)
-
+//global
 const letsGrow = document.getElementById(`start`)
 const treeIntro = document.getElementById(`treeintro`)
 const introBlock = document.getElementById(`intro`)
 const openModal = document.querySelector(`.open-modal`)
 const modalText = document.getElementById(`tree-modal`)
 const closeModal = document.getElementById(`close`)
+//events
 const openEventModal = document.querySelector(`.modal`)
 const eventModalText = document.querySelector(`.event-modal`)
 const closeEventModal = document.getElementById(`close-modal`)
 const choiceField = document.getElementById(`choice-field`)
-//functions
+//modal functions
+//intro
 const noGame = () => {
     treeIntro.style.display = `none`
     introBlock.style.display = `flex`
@@ -60,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 //tree decision
-let decidGrowRate = document.querySelector(`#decid`)
-let conifGrowRate = document.querySelector(`#conif`)
-let unknownGrowRate = document.querySelector(`#unknown`)
+let decidSelect = document.querySelector(`#decid`)
+let conifSelect = document.querySelector(`#conif`)
+let unknownSelect = document.querySelector(`#unknown`)
 const decisionDisplay = document.getElementById(`decision`)
 const treeButtons = document.querySelectorAll(`.choicebtn`)
 const buttonIDs = []
@@ -142,9 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
      fireDisplay.textContent = `You selected: ${fire}`
     });
     
-
-
-
 const currentYear = document.getElementById(`year`)
 const currentSeason = document.getElementById(`season`)
 const currentHeight = document.getElementById(`height`)
