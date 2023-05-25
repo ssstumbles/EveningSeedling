@@ -41,7 +41,6 @@ const modal = () => {
 const choices = () => {
     choiceField.style.display = `flex`
 }
-
 // //event listeners pg 1 index
 if (window.location.pathname === `/index.html`) {
     letsGrow.addEventListener(`click`, startGame)
