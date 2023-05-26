@@ -8,8 +8,8 @@ html {
 
 body {
     display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     background-color: #82846D;
     padding: 10%;
     height: 100vh;
@@ -21,12 +21,18 @@ a {
     text-decoration: none;
     color: #DDFCAD;
 }
+a :hover {
+    font-size: 150%;
+}
 h1 {
     display: flex;
     justify-content: center;
     font-weight:bold;
 }
-
+span {
+    color: #91A6FF;
+    display: inline;
+}
 button {
     display: flex;
     justify-content: flex-end;
@@ -39,7 +45,6 @@ button {
 }
 #event-modal {
     display: flex;
-
 }
 #intro {
     display: flex;

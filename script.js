@@ -12,6 +12,10 @@ const choiceField = document.getElementById(`choice-field`)
 const endModal = document.getElementById(`end-demo`)
 const statsField = document.querySelector(`.stats`)
 const continueButton = document.getElementById(`continue`)
+const currentYear = document.getElementById(`year`)
+const currentSeason = document.getElementById(`season`)
+const currentHeight = document.getElementById(`height`)
+const currentStr = document.getElementById(`sturdiness`)
 const noGame = () => {
     treeIntro.style.display = `none`
     introBlock.style.display = `flex`
@@ -33,18 +37,13 @@ const defaultPage = () => {
 const modal = () => {
     eventModalText.style.display = `flex`
 }
-// const close = () => {
-//     eventModalText.style.display = `none`
-// }
 const choices = () => {
     choiceField.style.display = `flex`
 }
-//end card
 const thankYou = () => {
     endModal.style.display = `flex`
     statsField.style.display = `none`
 }
-// //event listeners pg 1 index
 if (window.location.pathname === `/index.html`) {
     letsGrow.addEventListener(`click`, startGame)
     openModal.addEventListener(`click`, startModal)
@@ -57,7 +56,6 @@ if (window.location.pathname === `/p2.html`) {
 if (window.location.pathname === `/p3.html`) {
     continueButton.addEventListener(`click`, thankYou)
 }
-
 document.addEventListener('DOMContentLoaded', () => {
     const restartGame = document.querySelector(`.restart`)
     restartGame.onclick = () => {
@@ -81,11 +79,11 @@ treeButtons.forEach((button) => {
         let treeDecision
 
         if (treeType === `decid`) {
-            treeDecision = `decid`
-        } else if (treeType === `conif`) {
+            treeDecision = `You're a deciduous tree`
+        } else if (treeType === `You're a coniferous tree`) {
             treeDecision = `coniferous`
         } else if (treeType === `unknown`) {
-            treeDecision =`mystery`
+            treeDecision =`You're a mysterious shapeling`
         }
        selectedDecision.push(treeDecision)
         const url = new URL('p2.html', window.location.href)
@@ -104,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(decision)
     decisionDisplay.textContent = `You selected: ${decision}`
   })
-  //fire 
+//fire
   let hunkerDown = document.querySelector(`#hunker`)
   let growFast = document.querySelector(`#grow`)
   let chillOut = document.querySelector(`#chill`)
@@ -120,18 +118,17 @@ document.addEventListener('DOMContentLoaded', () => {
           let fireResult
   
           if (fireChoice === `hunker`) {
-              fireResult = `you made it through, a little stunted for your age the other trees tell you, but you are strong`
+              fireResult = `You made it through, a little stunted for your age the other trees tell you, but you are strong`
           } else if (fireChoice === `grow`) {
-              fireResult = `too much too soon. your sapling trunk was not made to withstand this. your essence is scattered among the seeds battling the chart`
+              fireResult = `Owww  that growth was too much too soon. Your thin little trunk is bowing and sagging from trying to get too tall too fast.`
           } else if (fireChoice === `chill`) {
-              fireResult =`those fires sure did challenge you, yet here you stand - unapolagetically average`
+              fireResult =`Those fires sure did challenge you, yet here you stand - unapolagetically average`
           }
          fireDecision.push(fireResult)
   
           const url = new URL('p3.html', window.location.href)
           url.searchParams.set('fire', fireDecision.join(`,`))
           window.location.href = url.href
-          console.log(fireDecision)
       })
   })
   document.addEventListener('DOMContentLoaded', () => {
@@ -144,24 +141,11 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(fire)
      fireDisplay.textContent = `${fire}`
     })
-   
-//fucking move these
-const currentYear = document.getElementById(`year`)
-const currentSeason = document.getElementById(`season`)
-const currentHeight = document.getElementById(`height`)
-const currentStr = document.getElementById(`sturdiness`)
-
 let yearIs = 0
 let seasonIs = `Spring`
 let heightIs = 1
 let strIs = 1
-
 currentYear.textContent = `It is year ${yearIs}`
 currentSeason.textContent = `The time of year is ${seasonIs}`
 currentHeight.textContent = `You are ${heightIs}cm tall`
 currentStr.textContent = `Your sturdiness is ${strIs}`
-//up to here
-
-
-  
-  
