@@ -164,3 +164,4 @@ currentStr.textContent = `Your sturdiness is ${strIs}`
 
 
   
+  
