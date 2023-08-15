@@ -9,10 +9,6 @@ Depending on how scenarios are handled, the choices will determine what kind of 
 This is just a demo of the first scenario. It establishes the boilerplate upon which the rest of the game will be based on. The game logic is a work in progress as shown here:
 
 
-https://www.figma.com/file/r24dUWHIT2tUGMsxezqQtO/Tree-Logic?type=whiteboard&node-id=879%3A301&t=j37pOraCHCPaOBDd-1
-
-https://trello.com/b/RuzstJEt/evening-seedling
-
 
 *****
 
@@ -24,18 +20,16 @@ Inspired by:
 
  - nature
 
- - Completley Arbortrary Podcast
-
-https://arbortrarypod.com/
+ - [Completley Arbortrary Podcast](https://arbortrarypod.com/)
 
 Resources: 
 
-https://www.sibleyguides.com/product/the-sibley-guide-to-trees/
+[Sibley Guide to Trees](https://www.sibleyguides.com/product/the-sibley-guide-to-trees/)
 
 
-https://www.groundsguys.ca/blog/2015/april/understanding-types-of-trees/#:~:text=But%20generally%2C%20trees%20in%20the,the%20tree%20throughout%20the%20year.
+[Ground Guys](https://www.groundsguys.ca/blog/2015/april/understanding-types-of-trees/#:~:text=But%20generally%2C%20trees%20in%20the,the%20tree%20throughout%20the%20year.)
 
-https://treecanada.ca/resources/trees-of-canada/
+[Trees of Canada](https://treecanada.ca/resources/trees-of-canada/)
 
 
 ******
